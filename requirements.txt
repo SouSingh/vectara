@@ -1,0 +1,11 @@
+llama-index
+openai
+docx2txt
+llama-hub
+autoevals 
+pypdf 
+pillow 
+transformers 
+torch 
+torchvision
+flask
