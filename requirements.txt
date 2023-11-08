@@ -8,3 +8,4 @@ transformers
 torch 
 torchvision
 flask
+langchain==0.0.27
