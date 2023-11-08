@@ -1,4 +1,4 @@
-tiktoken==0.5.1
+tiktoken
 llama-index
 openai
 docx2txt
