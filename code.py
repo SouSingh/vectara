@@ -48,7 +48,7 @@ class DCPRAssistant:
 
         self.loader = PDFReader()
 
-        self.docs = SimpleDirectoryReader("/content/sample_data/data").load_data()
+        self.docs = SimpleDirectoryReader("/data").load_data()
 
         self.node_parser = SimpleNodeParser.from_defaults(chunk_size=1024)
 
