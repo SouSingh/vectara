@@ -2,7 +2,6 @@ import nest_asyncio
 nest_asyncio.apply()
 
 from pathlib import Path
-from llama_hub.file.pdf.base import PDFReader
 from llama_index.response.notebook_utils import display_source_node
 from llama_index.retrievers import RecursiveRetriever
 from llama_index.query_engine import RetrieverQueryEngine
@@ -20,6 +19,8 @@ from llama_index.embeddings import resolve_embed_model
 import os
 import openai
 from flask import Flask, request, render_template
+from llama_index import download_loader
+
 
 
 class DCPRAssistant:
@@ -42,6 +43,8 @@ class DCPRAssistant:
         self.ctx = ServiceContext.from_defaults(llm=self.llm, chunk_size=512)
 
         self.response_synthesizer = get_response_synthesizer(service_context=self.ctx, response_mode="tree_summarize")
+
+        self.PDFReader = download_loader("PDFReader")
 
         self.loader = PDFReader()
 
