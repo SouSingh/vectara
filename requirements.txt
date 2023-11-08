@@ -8,4 +8,4 @@ transformers
 torch 
 torchvision
 flask
-tiktoken
+tiktoken==1.0.0
