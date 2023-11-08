@@ -1,3 +1,4 @@
+tiktoken==0.5.1
 llama-index
 openai
 docx2txt
@@ -10,4 +11,3 @@ torchvision
 flask
 langchain==0.0.27
 fsspec==2023.1.0
-tiktoken==0.5.1
