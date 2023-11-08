@@ -1,4 +1,3 @@
-tiktoken
 llama-index
 openai
 docx2txt
